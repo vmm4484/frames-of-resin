@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames of Resin by Kavya - Handcrafted Resin Art</title>
+    <meta name="description" content="Beautiful handmade resin art pieces including keychains, rakhis, photo frames, and custom items. Each piece is crafted with love and attention to detail.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <div class="logo">
+                    <div class="logo__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2L26.5 8V24L16 30L5.5 24V8L16 2Z" fill="var(--color-primary)" stroke="var(--color-primary)" stroke-width="2"/>
+                            <circle cx="16" cy="16" r="6" fill="var(--color-surface)" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <div class="logo__text">
+                        <h1 class="logo__name">Frames of Resin by Kavya</h1>
+                        <p class="logo__tagline">Handcrafted Resin Art Creations</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active" data-section="home">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link" data-section="products">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" data-section="about">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <a href="https://wa.me/919876543210" target="_blank" class="btn btn--primary btn--sm whatsapp-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.96.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.212-1.127-.37-1.972-.66-3.26-2.578-3.358-2.69-.097-.113-.792-1.047-.792-1.994 0-.947.502-1.414.679-1.603.177-.188.386-.235.514-.235.129 0 .257.001.37.007.118.006.277-.045.433.33.165.397.561 1.363.609 1.463.049.099.081.214.016.347-.064.132-.096.214-.193.33-.097.115-.203.257-.291.346-.097.099-.198.206-.085.404.113.198.502.827 1.078 1.339.740.659 1.365.863 1.559.959.193.097.307.081.419-.048.113-.129.483-.563.611-.756.129-.193.257-.161.435-.097.177.065 1.126.53 1.320.626.193.097.322.145.37.225.048.081.048.465-.117.928z"/>
+                    </svg>
+                    WhatsApp
+                </a>
+                
+                <button class="nav__toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h2 class="hero__title">Beautiful Handcrafted Resin Art</h2>
+                        <p class="hero__description">
+                            Discover unique resin keychains, rakhis, photo frames, and custom pieces. 
+                            Each item is lovingly handmade with attention to every detail.
+                        </p>
+                        <div class="hero__actions">
+                            <button class="btn btn--primary" data-section="products">Shop Now</button>
+                            <a href="https://wa.me/919876543210?text=Hi! I'd like to know more about your resin art products." target="_blank" class="btn btn--outline">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <div class="hero__image-placeholder">
+                            <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                                <rect width="200" height="200" rx="20" fill="var(--color-bg-1)"/>
+                                <path d="M100 50L150 75V125L100 150L50 125V75L100 50Z" fill="var(--color-primary)" opacity="0.8"/>
+                                <circle cx="100" cy="100" r="30" fill="var(--color-surface)" opacity="0.9"/>
+                                <text x="100" y="105" text-anchor="middle" fill="var(--color-text)" font-size="12">Resin Art</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-products">
+                    <h3 class="section__title">Featured Products</h3>
+                    <div class="products-grid" id="featuredProducts">
+                        <!-- Featured products will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section products-section hidden">
+            <div class="container">
+                <div class="products__header">
+                    <h2 class="section__title">Our Products</h2>
+                    <div class="products__controls">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+                        </div>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-category="All">All</button>
+                            <button class="filter-btn" data-category="Keychains">Keychains</button>
+                            <button class="filter-btn" data-category="Rakhis">Rakhis</button>
+                            <button class="filter-btn" data-category="Photo Frames">Photo Frames</button>
+                            <button class="filter-btn" data-category="Others">Others</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Detail Modal -->
+        <div id="productModal" class="modal hidden">
+            <div class="modal__backdrop" id="modalBackdrop"></div>
+            <div class="modal__content">
+                <button class="modal__close" id="modalClose">&times;</button>
+                
+                <div class="product-detail">
+                    <div class="product-detail__images">
+                        <div class="carousel" id="productCarousel">
+                            <div class="carousel__container">
+                                <div class="carousel__track" id="carouselTrack">
+                                    <!-- Images will be loaded here -->
+                                </div>
+                            </div>
+                            <button class="carousel__btn carousel__btn--prev" id="carouselPrev">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15,18 9,12 15,6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="carousel__btn carousel__btn--next" id="carouselNext">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9,6 15,12 9,18"></polyline>
+                                </svg>
+                            </button>
+                            <div class="carousel__dots" id="carouselDots">
+                                <!-- Dots will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-detail__info">
+                        <h3 class="product-detail__name" id="productName"></h3>
+                        <p class="product-detail__price" id="productPrice"></p>
+                        <p class="product-detail__description" id="productDescription"></p>
+                        
+                        <div class="product-detail__colors" id="productColors">
+                            <h4>Available Colors:</h4>
+                            <div class="color-options" id="colorOptions">
+                                <!-- Color options will be loaded here -->
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn--primary btn--full-width whatsapp-order" id="whatsappOrder">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.96.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.212-1.127-.37-1.972-.66-3.26-2.578-3.358-2.69-.097-.113-.792-1.047-.792-1.994 0-.947.502-1.414.679-1.603.177-.188.386-.235.514-.235.129 0 .257.001.37.007.118.006.277-.045.433.33.165.397.561 1.363.609 1.463.049.099.081.214.016.347-.064.132-.096.214-.193.33-.097.115-.203.257-.291.346-.097.099-.198.206-.085.404.113.198.502.827 1.078 1.339.740.659 1.365.863 1.559.959.193.097.307.081.419-.048.113-.129.483-.563.611-.756.129-.193.257-.161.435-.097.177.065 1.126.53 1.320.626.193.097.322.145.37.225.048.081.048.465-.117.928z"/>
+                            </svg>
+                            Order on WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section hidden">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <h2 class="section__title">About Kavya</h2>
+                        <p class="about__description">
+                            Welcome to Frames of Resin by Kavya, where creativity meets craftsmanship. 
+                            I'm Kavya, a passionate resin artist dedicated to creating beautiful, unique pieces 
+                            that capture memories and add beauty to everyday life.
+                        </p>
+                        <p class="about__description">
+                            Each piece is handcrafted with love, using high-quality resin and carefully selected 
+                            materials. From delicate floral keychains to stunning photo frames, every creation 
+                            tells a story and reflects the beauty of handmade artistry.
+                        </p>
+                        <div class="about__features">
+                            <div class="feature">
+                                <h4>Handmade with Love</h4>
+                                <p>Every piece is individually crafted by hand with attention to detail.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Quality Materials</h4>
+                                <p>Using premium resin and carefully selected embellishments.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Custom Orders</h4>
+                                <p>We create personalized pieces to match your vision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__image">
+                        <div class="about__image-placeholder">
+                            <svg width="300" height="300" viewBox="0 0 300 300" fill="none">
+                                <rect width="300" height="300" rx="20" fill="var(--color-bg-2)"/>
+                                <circle cx="150" cy="120" r="40" fill="var(--color-primary)" opacity="0.8"/>
+                                <rect x="100" y="180" width="100" height="80" rx="10" fill="var(--color-surface)" opacity="0.9"/>
+                                <text x="150" y="230" text-anchor="middle" fill="var(--color-text)" font-size="14">Kavya's Workshop</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section hidden">
+            <div class="container">
+                <h2 class="section__title">Get in Touch</h2>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <h4>WhatsApp</h4>
+                            <p>+91 7893814751</p>
+                        </div>
+                        <div class="contact__item">
+                            <h4>Email</h4>
+                            <p>framesofresinbykavya@gmail.com</p>
+                        </div>
+                        <div class="contact__item">
+                            <h4>Location</h4>
+                            <p>Andhra Pradesh, India</p>
+                        </div>
+                        <div class="contact__item">
+                            <h4>Hours</h4>
+                            <p>Mon-Sun: 10 AM - 7 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">Name</label>
+                                <input type="text" id="contactName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail" class="form-label">Email</label>
+                                <input type="email" id="contactEmail" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage" class="form-label">Message</label>
+                                <textarea id="contactMessage" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h4>Frames of Resin by Kavya</h4>
+                    <p>Handcrafted Resin Art Creations</p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#home" data-section="home">Home</a></li>
+                            <li><a href="#products" data-section="products">Products</a></li>
+                            <li><a href="#about" data-section="about">About</a></li>
+                            <li><a href="#contact" data-section="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h5>Categories</h5>
+                        <ul>
+                            <li><a href="#products" data-section="products" data-category="Keychains">Keychains</a></li>
+                            <li><a href="#products" data-section="products" data-category="Rakhis">Rakhis</a></li>
+                            <li><a href="#products" data-section="products" data-category="Photo Frames">Photo Frames</a></li>
+                            <li><a href="#products" data-section="products" data-category="Others">Others</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h5>Follow Us</h5>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/frames_of_resin_by_kavya?igsh=N2kza3gzNmllYzFs" target="_blank">Instagram</a>
+                            <a href="https://www.instagram.com/frames_of_resin_by_kavya?igsh=N2kza3gzNmllYzFs" target="_blank">Facebook</a>
+                            <a href="https://www.instagram.com/frames_of_resin_by_kavya?igsh=N2kza3gzNmllYzFs" target="_blank">Pinterest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>2024 Frames of Resin by Kavya.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
